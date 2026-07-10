@@ -113,17 +113,6 @@ body.locked {
   pointer-events: none;
 }
 
-.letter-flap {
-  position: absolute;
-  z-index: 1;
-  inset: -46px 24px auto;
-  height: 118px;
-  border: 1px solid var(--line);
-  background: linear-gradient(135deg, #1e1a10, #080806);
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
-  transform-origin: top;
-  animation: flap 4s ease-in-out infinite;
-}
 
 .letter-card {
   position: relative;
@@ -638,16 +627,6 @@ iframe {
   }
 }
 
-@keyframes flap {
-  0%,
-  100% {
-    transform: rotateX(0);
-  }
-
-  50% {
-    transform: rotateX(9deg);
-  }
-}
 
 @keyframes rise {
   from {
