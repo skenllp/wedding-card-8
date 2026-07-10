@@ -152,7 +152,7 @@ body.locked {
 .overline,
 .card-kicker {
   margin: 0 0 16px;
-  color: var(--gold);
+  color: var(--white);
   font-family: "Cinzel", serif;
   font-size: 0.76rem;
   font-weight: 600;
@@ -165,12 +165,21 @@ body.locked {
   width: min(340px, 100%);
   margin: 22px auto;
   padding: 12px 0;
-  color: var(--gold);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   font-family: "Cinzel", serif;
   letter-spacing: 0.28em;
   text-transform: uppercase;
+}
+
+.letter-date {
+  color: var(--gold);
+}
+
+.hero-date {
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
 }
 
 .gold-button,
@@ -291,11 +300,12 @@ body.locked {
 
 .hero h2 .amp {
   display: block;
-  color: var(--gold);
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
   font-family: "Cormorant Garamond", serif;
   font-size: 0.52em;
   line-height: 0.9;
-  text-shadow: 0 0 28px rgba(200, 57, 58, 0.60);
+  text-shadow: 0 0 28px rgba(255, 255, 255, 0.30);
   margin: 0.05em 0;
 }
 
@@ -493,12 +503,22 @@ body.locked {
   text-align: left;
 }
 
+.card-kicker {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+
 .event-card p:not(.card-kicker) {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--text);
-  line-height: 1.7;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.8;
 }
 
 .icon {
